@@ -1,87 +1,64 @@
 @charset "UTF-8";
 
 *{
-    margin: 0%;
-    padding: 0;
+    margin: 0px;
+    padding: 0px;
 }
+
+html , body{
+    min-width: 100vh;
+    background-color: darkgrey;
+}
+
 header{
     background-color: black;
     color: white;
     text-align: center;
-    padding: 60px;
-    
 }
-header h1{
-    font-size: 3em;
-}
+ header > h1{
+    padding-top: 50px;
+    font-variant: small-caps;
+ }
 
-header h2{
-    font-size: 20px;
-}
-header a{
+ header > p{
+    padding-bottom: 50px;
+ }
+
+ a{
     color: white;
     text-decoration: none;
-}
-header a:hover{
-    text-decoration: underline;
-}
-section p{
-    padding-bottom: 2em;
-   
-   
-}
+    font-weight: bolder;
+ }
 
- p{
-    display: block;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-}
+ a:hover{
+    text-decoration: underline;
+ }
 
 section.normal{
     background-color: white;
     color: black;
+}
+section.imagem{
+    background-color: rgb(54, 52, 52);
+    color: white;
 
 }
 
+section.imagem > p{
+    background-color: rgba(0, 0, 0, 0.395);
+    width: 400px;
+}
 
 section{
     padding-top: 10vh;
     padding-bottom: 10vh;
     line-height: 2em;
     padding-left: 30px;
-    font-family: var(--fonte3);
-    font-size: 3.5vw;
-    display: block;
-}
-section#img01{
-   
-
-    height: 700px
-
-}
-#img01{
-    background-image: url(./imagens/background001.jpg);
-    background-size: cover;
-    width:  100%;
-    background-attachment: fixed;
-    
-
 }
 
-    #caixa01{
-        display: block;
-        margin-block-start: 1em;
-        margin-block-end: 1em;
-        margin-inline-start: 0px;
-        margin-inline-end: 0px;
-}
- section.imagem{
-    background-color: rgb(51, 51, 51);
+ footer{
+    background-color: black;
+    text-align: center;
     color: white;
-    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.473);
-    background-size: cover;
-    background-attachment: fixed
+    padding: 5px;
  }
-    }
